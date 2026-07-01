@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+a {
+    text-decoration: none;
+    color: #0D1B2A;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#cabecalho {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 10px 50px #e6e6e6;
+}
+#logo-img {
+    height: 45px;
+}
+#caminhos {
+    width: 220px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.caminho {
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h1 {
+    color: #000;
+}
+.content-img {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #0D1B2A;
+    border-radius: 5px;
+}
+#I-solucoes {
+    margin-left: 80px;
+}
+#I-solicitar {
+    margin-right: 80px;
+}
+#I-conheca {
+    margin-left: 80px;
+}
+.click {
+    border: 0;
+    margin-top: 20px;
+}
+button {
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    background-color: #ff3500;
+    padding: 0;
+    border-radius: 5px;
+    margin-left: 0;
+    cursor: pointer;
+}
+#solucoes {
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#solucoes-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicosB {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#servicos {
+    height: 440px;
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #F9F9F9;
+    border-radius: 5px;
+}
+#servicos-info {
+    width: 905px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 80px;
+}
+#solicitar {
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#solicitar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+#solicitar-info h1 {
+    text-align: left;
+}
+#conheca {
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#conheca-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+#rodape {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+ 
+@media only screen and (max-width: 599px) {
+    #all {
+        width: 360px;
+    }
+    #I-solucoes, #I-solicitar, #I-conheca {
+        width: 360px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    #solucoes, #conheca {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    #solucoes p {
+        text-align: justify;
+    }
+    #solicitar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    #solicitar h1 {
+        text-align: left;
+    }
+    #soicitar p {
+        text-align: justify;
+    }
+    #servicos {
+        width: 400px;
+    }
+    #rodape {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+    #all {
+        width: 560px;
+    }
+    #I-solucoes, #I-solicitar, #I-conheca {
+        width: 560px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    #solucoes, #conheca {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    #solucoes p {
+        text-align: justify;
+    }
+    #solicitar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    #solicitar h1 {
+        text-align: left;
+    }
+    #soicitar p {
+        text-align: justify;
+    }
+    #servicos {
+        width: 440px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #all {
+        width: 728px;
+    }
+    #servicos {
+        width: 608px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #all {
+        width: 952px;
+    }
+    #solucoes p {
+        text-align: justify;
+    }
+    #servicos {
+        width: 832px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #all {
+        width: 1160px;
+    }
+    #servicos {
+        width: 1040px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    #all {
+        width: 1360px;
+    }
+    #servicos {
+        width: 1240px;
+    }
+}
